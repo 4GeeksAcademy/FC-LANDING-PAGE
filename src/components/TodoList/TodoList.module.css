@@ -1,27 +1,23 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-.todo-list {
-    margin: 20px auto;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* src/components/TodoList/TodoList.css */
+.todoList {
+    margin-top: 20px;
   }
   
-  .todo-list h1 {
+  .todoList h2 {
     margin-bottom: 10px;
   }
   
-  .todo-list form {
+  .todoList form {
     margin-bottom: 10px;
   }
   
-  .todo-list input[type="text"] {
+  .todoList input[type="text"] {
     width: calc(100% - 80px);
     padding: 5px;
     margin-right: 10px;
   }
   
-  .todo-list button {
+  .todoList button {
     padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
@@ -30,21 +26,21 @@
     cursor: pointer;
   }
   
-  .todo-list button:hover {
+  .todoList button:hover {
     background-color: #0056b3;
   }
   
-  .todo-list ul {
+  .todoList ul {
     list-style-type: none;
     padding: 0;
   }
   
-  .todo-list li {
+  .todoList li {
     margin-bottom: 5px;
     position: relative;
   }
   
-  .todo-list .delete-btn {
+  .todoList .deleteBtn {
     display: none;
     position: absolute;
     right: 0;
@@ -56,7 +52,7 @@
     cursor: pointer;
   }
   
-  .todo-list li:hover .delete-btn {
+  .todoList li:hover .deleteBtn {
     display: block;
   }
   
