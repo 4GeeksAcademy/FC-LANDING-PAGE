@@ -23,7 +23,7 @@
   
   .todo-list button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #9a378d;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -31,7 +31,7 @@
   }
   
   .todo-list button:hover {
-    background-color: #0056b3;
+    background-color: #c79bc6;
   }
   
   .todo-list ul {

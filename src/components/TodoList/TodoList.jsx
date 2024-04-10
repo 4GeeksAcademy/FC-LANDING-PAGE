@@ -1,8 +1,8 @@
-// src/components/TodoList/TodoList.jsx
+// TodoList.jsx
 import React, { useState } from 'react';
-import styles from './TodoList.module.css'; // Corrected import path for component-specific CSS module
+import styles from './TodoList.module.css'; // Import component-specific CSS module
 
-function TodoList() {
+const TodoList = () => {
   const [tasks, setTasks] = useState([]);
   const [taskInput, setTaskInput] = useState('');
 
@@ -25,7 +25,7 @@ function TodoList() {
 
   return (
     <div className={styles.todoList}>
-      <h2>To-Do List</h2>
+      <h1>To-Do List</h1>
       <form onSubmit={handleAddTask}>
         <input
           type="text"
@@ -51,7 +51,6 @@ function TodoList() {
       )}
     </div>
   );
-}
+};
 
 export default TodoList;
-

@@ -1,58 +1,61 @@
-/* src/components/TodoList/TodoList.css */
+/* TodoList.module.css */
 .todoList {
-    margin-top: 20px;
-  }
-  
-  .todoList h2 {
-    margin-bottom: 10px;
-  }
-  
-  .todoList form {
-    margin-bottom: 10px;
-  }
-  
-  .todoList input[type="text"] {
-    width: calc(100% - 80px);
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  .todoList button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .todoList button:hover {
-    background-color: #0056b3;
-  }
-  
-  .todoList ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .todoList li {
-    margin-bottom: 5px;
-    position: relative;
-  }
-  
-  .todoList .deleteBtn {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px;
-    background-color: transparent;
-    color: #ff0000;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .todoList li:hover .deleteBtn {
-    display: block;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.todoList h1 {
+  text-align: center;
+}
+
+.todoList form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.todoList form input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.todoList form button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todoList form button:hover {
+  background-color: #0056b3;
+}
+
+.todoList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.todoList li:hover .deleteBtn {
+  display: block;
+}
+
+.todoList .deleteBtn {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
